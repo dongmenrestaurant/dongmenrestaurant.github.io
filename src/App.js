@@ -142,7 +142,7 @@ class App extends React.Component {
 
     const homepageBody = (
       <div className="homepage-body">
-        <img className="homepage-title-image" src="images/newhomepage.png"/>
+        <img className="homepage-title-image" src="images/newhomepage.jpg"/>
         <div className="homepage-row">
           <div className="homepage-about-us">
             <div className="homepage-section-title">
@@ -158,7 +158,7 @@ class App extends React.Component {
           <img className="homepage-about-us-image" src="images/picture2.jpg"/>
         </div>
         <div className="homepage-row">
-          <img className="homepage-food-image" src="images/foodpicture.png" />
+          <img className="homepage-food-image" src="images/foodpicture.jpg" />
           <div className="homepage-food">
             <div className="homepage-section-title">
               美食介紹
