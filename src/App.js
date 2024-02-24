@@ -125,11 +125,6 @@ class App extends React.Component {
                 <img className="footer-icon" src="images/facebookicon.png"/>
               </a>
             </span>
-            <span>
-              <a href="google.com">
-                <img className="footer-icon" src="images/instagramicon.png"/>
-              </a>
-            </span>
             <div>
               東門餃子館 © All rights reserved.
             </div>
