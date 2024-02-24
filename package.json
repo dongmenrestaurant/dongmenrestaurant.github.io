@@ -1,7 +1,7 @@
 {
   "name": "restaurant-v2",
   "version": "0.1.0",
-  "homepage": "https://hsinyichao.github.io/dmrestaurant.github.io",
+  "homepage": "https://dongmenrestaurant.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
