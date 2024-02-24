@@ -1,0 +1,25 @@
+.footer-divider {
+  margin-top: 40px;
+  border-top: 1px solid lightgrey;
+  width: 95%;
+}
+
+.footer {
+  height: 120px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 5px;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-item {
+  line-height: 20px;
+}
+
+.footer-icon {
+  height: 50px;
+  width: 50px;
+}

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dmrestaurant.github.io/static/css/main.e6c13ad2.css",
+    "main.js": "/dmrestaurant.github.io/static/js/main.66863223.js",
+    "static/js/592.f5a8e79b.chunk.js": "/dmrestaurant.github.io/static/js/592.f5a8e79b.chunk.js",
+    "index.html": "/dmrestaurant.github.io/index.html",
+    "main.e6c13ad2.css.map": "/dmrestaurant.github.io/static/css/main.e6c13ad2.css.map",
+    "main.66863223.js.map": "/dmrestaurant.github.io/static/js/main.66863223.js.map",
+    "592.f5a8e79b.chunk.js.map": "/dmrestaurant.github.io/static/js/592.f5a8e79b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.66863223.js"
+  ]
+}
