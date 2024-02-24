@@ -1,0 +1,18 @@
+.menu-image {
+  width: 100%; 
+}
+
+.menu-body {
+  margin-top: 120px;
+}
+
+.menu-title {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 60px 0;
+  text-align: center;
+}
+
+.menu-container { 
+  margin: 0 100px;
+}
