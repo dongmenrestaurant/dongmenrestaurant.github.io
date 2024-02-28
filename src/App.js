@@ -105,6 +105,9 @@ class App extends React.Component {
               (02) 2341-1685
             </div>
             <div>
+              (02) 2393-9978
+            </div>
+            <div>
               dumpling.tw@gmail.com
             </div>
           </div>
@@ -113,16 +116,26 @@ class App extends React.Component {
               營業時間
             </div>
             <div>
-              一 - 五：11:00--14:30 17:00--21:00
+              一 - 五：11:00--14:00 17:00--20:40
             </div>
             <div>
-              六 - 日：11:00--15:00 17:00--21:30
+              六 - 日：11:00--14:30 17:00--21:00
             </div>
           </div>
           <div className="footer-item" style={{justifySelf: "end"}}>
             <span>
-              <a href="https://www.facebook.com/%E6%9D%B1%E9%96%80%E9%A4%83%E5%AD%90%E9%A4%A8-192439990781160">
-                <img className="footer-icon" src="images/facebookicon.png"/>
+              <a href="https://maps.app.goo.gl/CqFkUW5v8ETERUJT6" target="_blank">
+                <img className="footer-icon" src="images/googlemapsicon.svg"/>
+              </a>
+            </span>
+            <span>
+              <a href="https://www.facebook.com/profile.php?id=100064091051137&mibextid=PtKPJ9" target="_blank">
+                <img className="footer-icon" src="images/facebookicon.svg"/>
+              </a>
+            </span>
+            <span>
+              <a href="mailto:dumpling.tw@gmail.com" target="_blank">
+                <img className="footer-icon" src="images/emailicon.svg"/>
               </a>
             </span>
             <div>
