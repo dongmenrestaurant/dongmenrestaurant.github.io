@@ -56,24 +56,8 @@ class App extends React.Component {
       });
     }
 
-    let styles = {};
-
-    const homepageStyles = {
-      navbar: { color: "white" }
-    };
-
-    const otherStyles = {
-      navbar: { color: "black" }
-    }
-
-    if(this.state.currentPage === "homepage") {
-      styles = homepageStyles;
-    } else {
-      styles = otherStyles;
-    }
-
     const navbar = (
-      <div className="navbar" style={styles.navbar}>
+      <div className="navbar">
         <img className="navbar-logo" src="images/dmlogo.png" onClick={navigateToHomepage}/>
         <div className="navbar-item" onClick={navigateToAboutUsPage}>
           關於東門

@@ -2,6 +2,11 @@
   width: 100%;
   display: block;
 }
+
+.homepage-body {
+  margin-top: 140px;
+}
+
 .homepage-row {
   display: flex;
   flex-direction: row;
