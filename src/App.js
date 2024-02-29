@@ -48,20 +48,6 @@ class App extends React.Component {
       });
     }
 
-    const navigateToContactUsPage = async () => {
-      window.scroll({top: 0, left: 0, behavior: 'smooth' });
-
-      this.setState({
-        currentPage: "contactus"
-      });
-    }
-
-    const renderContactUsPostSubmitBody = () => {
-      this.setState({
-        currentPage: "contactuspostsubmit"
-      });
-    }
-
     let styles = {};
 
     const homepageStyles = {
@@ -260,73 +246,6 @@ class App extends React.Component {
         <img className="deliveryinfo-priceimage" src="images/deliveryprices.jpg"/>
       </div>
     );
-
-    const contactUsBody = (
-      <div className="contactus-body">
-        <img className="contactus-image" src="images/contactusbanner.jpg"/>
-        <div className="contactus-title">
-          聯絡我們/線上訂位
-        </div>
-        <form className="contactus-form" onSubmit={onSubmit}>
-          <label>
-            姓名 *
-            <input
-              type="text"
-              name="name"
-              required
-            />
-          </label>
-          <label>
-            電話 *
-            <input
-              type="tel"
-              name="phoneNumber"
-              required
-            />
-          </label>
-          <label>
-            Email *
-            <input
-              type="email"
-              name="email"
-              required
-            />
-          </label>
-          <label className="content-label">
-            內容 *
-            <textarea
-              className="content-textarea"
-              type="text"
-              name="content"
-              required
-            />
-          </label>
-          <button type="submit">提交</button>
-          <div className="contactus-instructions">
-            定位須知<br/>
-            ＊訂位請備註日期、時間以及人數。送出並非訂位成功，我們將致電與您確認訂位<br/>
-            ＊兩天內的訂位請直接致電(02) 23411685<br/>
-            ＊訂位只會保留10 分鐘，如需更改訂位或有任何問題請致電(02) 23411685<br/>
-            ＊如有特殊需求，例如：有輪椅需要做一樓，請於內容註明 <br/>
-            <br/>
-            宅配需知<br/>
-            ＊請準確填寫姓名電話，並於內容處填寫宅配地址以及訂購品項，我們將致電與您確認宅配<br/>
-          </div>
-        </form>
-      </div>
-    );
-
-    const contactUsPostSubmitBody = (
-      <div className="contactus-body">
-        <img className="contactus-image" src="images/contactusbanner.jpg"/>
-        <div className="contactus-title">
-          聯絡我們/線上訂位
-        </div>
-        <div className="contactus-postsubmit-message">
-          內容已提交，感謝您寶貴的問題與建議，我們將盡快與您聯絡，謝謝您!
-        </div>
-      </div>
-    )
 
     if(this.state.currentPage === "homepage") {
       body = homepageBody;
