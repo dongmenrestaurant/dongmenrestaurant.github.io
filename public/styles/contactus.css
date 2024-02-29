@@ -1,0 +1,21 @@
+.contactus-image {
+  width: 100%;
+}
+
+.contactus-body {
+  margin-top: 120px;
+  display: grid;
+}
+
+.contactus-title {
+  font-weight: bold;
+  font-size: 32px;
+  margin: 60px 0;
+  justify-self: center;
+}
+
+.contactus-text {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 40px;
+}

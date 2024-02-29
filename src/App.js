@@ -48,6 +48,14 @@ class App extends React.Component {
       });
     }
 
+    const navigateToContactUsPage = () => {
+      window.scroll({top: 0, left: 0, behavior: 'smooth' });
+
+      this.setState({
+        currentPage: "contactus"
+      });
+    }
+
     let styles = {};
 
     const homepageStyles = {
@@ -75,6 +83,9 @@ class App extends React.Component {
         </div>
         <div className="navbar-item" onClick={navigateToDeliveryInfoPage}>
           外送資訊
+        </div>
+        <div className="navbar-item" onClick={navigateToContactUsPage}>
+          外帶自取
         </div>
       </div>
     );
@@ -247,6 +258,20 @@ class App extends React.Component {
       </div>
     );
 
+    const contactUsBody = (
+      <div className="contactus-body">
+        <img className="contactus-image" src="images/contactusbanner.jpg"/>
+        <div className="contactus-title">
+          外帶自取
+        </div>
+        <div className="contactus-text">
+          網路點餐外帶自取功能即將上線
+          <br/><br/>
+          如有外帶需求可來電訂餐
+        </div>
+      </div>
+    );
+
     if(this.state.currentPage === "homepage") {
       body = homepageBody;
     } else if(this.state.currentPage === "aboutus") {
@@ -255,6 +280,8 @@ class App extends React.Component {
       body = menuBody;
     } else if(this.state.currentPage === "deliveryinfo") {
       body = deliveryInfoBody;
+    } else if(this.state.currentPage === "contactus") {
+      body = contactUsBody;
     } else {
       body = homepageBody;
     }
