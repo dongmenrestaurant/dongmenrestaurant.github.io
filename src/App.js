@@ -257,7 +257,7 @@ class App extends React.Component {
           <br></br><br></br>
           ＊訂購滿＄2000，可享免運費優惠。其餘訂單請於聯絡我們頁面填寫訂購品項，我們將致電通知您運費以及宅配相關事宜。
         </div>
-        <img className="deliveryinfo-priceimage" src="images/price.png"/>
+        <img className="deliveryinfo-priceimage" src="images/deliveryprices.jpg"/>
       </div>
     );
 
