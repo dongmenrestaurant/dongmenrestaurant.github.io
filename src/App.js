@@ -227,8 +227,8 @@ class App extends React.Component {
           美食介紹
         </div>
         <div className="menu-container">
-          <img className="menu-image" style={{marginBottom: "80px"}} src="images/menu1.jpg"/>
-          <img className="menu-image" src="images/menu2.jpg"/>
+          <img className="menu-image" style={{marginBottom: "80px"}} src="images/menu-first-page.jpg"/>
+          <img className="menu-image" src="images/menu-second-page.jpg"/>
         </div>
       </div>
     );
