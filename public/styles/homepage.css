@@ -1,5 +1,6 @@
 .homepage-title-image {
   width: 100%;
+  display: block;
 }
 .homepage-row {
   display: flex;
