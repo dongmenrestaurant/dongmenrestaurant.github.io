@@ -1,5 +1,4 @@
 .footer-divider {
-  margin-top: 40px;
   border-top: 1px solid lightgrey;
   width: 95%;
 }
@@ -22,4 +21,5 @@
 .footer-icon {
   height: 50px;
   width: 50px;
+  margin-left: 20px;
 }
