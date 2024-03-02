@@ -103,7 +103,7 @@ class App extends React.Component {
               六 - 日：11:00--14:30 17:00--21:00
             </div>
           </div>
-          <div className="footer-item" style={{justifySelf: "end"}}>
+          <div className="footer-item" style={{justifySelf: "end", textAlign: "right"}}>
             <span>
               <a href="https://maps.app.goo.gl/CqFkUW5v8ETERUJT6" target="_blank">
                 <img className="footer-icon" src="images/googlemapsicon.svg"/>
@@ -203,13 +203,22 @@ class App extends React.Component {
 
     const menuBody = (
       <div className="menu-body">
-        <img className="menu-image" src="images/page3.jpg"/>
-        <div className="menu-title">
-          美食介紹
-        </div>
-        <div className="menu-container">
-          <img className="menu-image" style={{marginBottom: "80px"}} src="images/menu-first-page.jpg"/>
-          <img className="menu-image" src="images/menu-second-page.jpg"/>
+        <img className="menu-image" src="images/menubanner.jpg"/>
+        <div className="menu-description">
+          <div className="menu-title">
+            美食介紹
+          </div>
+          <div className="menu-container">
+            <img className="menu-image" src="images/menu-first-page.jpg"/>
+            <div className="menu-image-bottom-text">
+              * 更多品項及季節限定菜色請至外帶自取頁面查看 *
+            </div>
+            <br/><br/><br/><br/>
+            <img className="menu-image" src="images/menu-second-page.jpg"/>
+            <div className="menu-image-bottom-text">
+              * 更多品項及季節限定菜色請至外帶自取頁面查看 *
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -217,41 +226,49 @@ class App extends React.Component {
     const deliveryInfoBody = (
       <div className="deliveryinfo-body">
         <img className="deliveryinfo-image" src="images/deliveryinfobanner.jpg"/>
-        <div className="deliveryinfo-title">
-          外送資訊
+        <div className="deliveryinfo-description">
+          <div className="deliveryinfo-title">
+            外送資訊
+          </div>
+          <div className="deliveryinfo-text">
+            東門餃子館與 Food Panda 富胖達外送服務合作，請由下方連結訂購
+            <br/><br/>
+            <a href="https://www.foodpanda.com.tw/en/restaurant/w0ll/dong-men-jiao-zi-guan">
+              https://www.foodpanda.com.tw/en/restaurant/w0ll/dong-men-jiao-zi-guan
+            </a>
+          </div>
+          <div className="deliveryinfo-title">
+            宅配資訊
+          </div>
+          <div className="deliveryinfo-texttwo">
+            本店提供冷凍餃類、冷凍蔥油餅、火鍋等品項之宅配服務
+            <br/>
+            如有訂購需求請來信或來電告知
+            <br/><br/>
+            * 宅配金額滿＄2000，可享免運費優惠 *
+          </div>
+          <div className="deliveryinfo-price">
+            <img className="deliveryinfo-priceimage" src="images/deliveryprices.jpg"/>
+            <div className="deliveryinfo-priceimage-bottom-text">
+              * 如有需其他品項之宅配服務請來電洽詢 *
+            </div>
+          </div>
         </div>
-        <div className="deliveryinfo-text">
-          東門餃子館與熊貓外送服務合作，請下方網址訂購。
-          <br/><br/>
-          網址：熊貓外送 <br/>
-          <a href="https://www.foodpanda.com.tw/en/restaurant/w0ll/dong-men-jiao-zi-guan">
-            https://www.foodpanda.com.tw/en/restaurant/w0ll/dong-men-jiao-zi-guan
-          </a>
-        </div>
-        <div className="deliveryinfo-title">
-          宅配資訊
-        </div>
-        <div className="deliveryinfo-texttwo">
-          本店提供以下品項宅配服務：水餃、鍋貼、蒸餃以及火鍋
-          <br></br><br></br>
-          如需線上訂購請至聯絡我們頁面填寫訂購品項。
-          <br></br><br></br>
-          ＊訂購滿＄2000，可享免運費優惠。其餘訂單請於聯絡我們頁面填寫訂購品項，我們將致電通知您運費以及宅配相關事宜。
-        </div>
-        <img className="deliveryinfo-priceimage" src="images/deliveryprices.jpg"/>
       </div>
     );
 
     const contactUsBody = (
       <div className="contactus-body">
         <img className="contactus-image" src="images/contactusbanner.jpg"/>
-        <div className="contactus-title">
-          外帶自取
-        </div>
-        <div className="contactus-text">
-          網路點餐外帶自取功能即將上線
-          <br/><br/>
-          如有外帶需求可來電訂餐
+        <div className="contactus-description">
+          <div className="contactus-title">
+            外帶自取
+          </div>
+          <div className="contactus-text">
+            網路點餐外帶自取功能即將上線
+            <br/><br/>
+            如有外帶需求可來電訂餐
+          </div>
         </div>
       </div>
     );

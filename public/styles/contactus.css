@@ -7,15 +7,17 @@
   display: grid;
 }
 
+.contactus-description {
+  text-align: center;
+  padding: 40px 0;
+}
+
 .contactus-title {
   font-weight: bold;
   font-size: 32px;
-  margin: 60px 0;
-  justify-self: center;
+  margin-bottom: 40px;
 }
 
 .contactus-text {
-  text-align: center;
   font-size: 20px;
-  margin-bottom: 40px;
 }

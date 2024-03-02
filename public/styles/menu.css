@@ -2,15 +2,24 @@
   width: 100%; 
 }
 
+.menu-image-bottom-text {
+  text-align: right;
+  font-size: 26px;
+}
+
 .menu-body {
   margin-top: 140px;
+}
+
+.menu-description {
+  text-align: center;
+  padding: 40px 0;
 }
 
 .menu-title {
   font-weight: bold;
   font-size: 32px;
-  margin: 60px 0;
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 .menu-container { 

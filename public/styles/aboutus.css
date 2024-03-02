@@ -12,8 +12,9 @@
   font-size: 20px;
   row-gap: 40px;
   column-gap: 60px;
-  margin: 40px 150px;
+  padding: 40px 150px;
   line-height: 40px;
+  align-items: center;
 }
 
 .aboutus-title {
