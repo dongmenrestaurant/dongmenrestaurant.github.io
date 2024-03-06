@@ -7,7 +7,9 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      currentPage: "homepage"
+      currentPage: "homepage",
+      hideLoadingPage: false,
+      showHomepage: false,
     }
   }
 
@@ -15,6 +17,18 @@ class App extends React.Component {
     const onSubmit = (event) => {
       event.preventDefault();
     };
+
+    const hideLoadingPage = () => {
+      this.setState({
+        hideLoadingPage: true
+      });
+    }
+
+    const showHomepage = () => {
+      this.setState({
+        showHomepage: true
+      });
+    }
 
     const navigateToAboutUsPage = () => {
       window.scroll({top: 0, left: 0, behavior: 'smooth' });
@@ -127,11 +141,14 @@ class App extends React.Component {
       </>
     );
 
+    const loadingPageBody = (
+      <img className="loadingpage-image" src="images/newhomepage.jpg"/>
+    );
+
     let body = undefined;
 
     const homepageBody = (
       <div className="homepage-body">
-        <img className="homepage-title-image" src="images/newhomepage.jpg"/>
         <div className="homepage-row">
           <div className="homepage-about-us">
             <div className="homepage-section-title">
@@ -273,6 +290,16 @@ class App extends React.Component {
       </div>
     );
 
+    if(!this.state.hideLoadingPage) {
+      setTimeout(() => {
+          hideLoadingPage();
+      }, 1000);
+
+      setTimeout(() => {
+          showHomepage();
+      }, 2000);
+    }
+
     if(this.state.currentPage === "homepage") {
       body = homepageBody;
     } else if(this.state.currentPage === "aboutus") {
@@ -289,9 +316,14 @@ class App extends React.Component {
 
     return (
       <>
-        {navbar}
-        {body}
-        {footer}
+        <div className={this.state.hideLoadingPage? "fade-out" : "fade-in"}>
+          {loadingPageBody}
+        </div>
+        <div className={this.state.showHomepage? "fade-in" : "fade-out"}>
+          {navbar}
+          {body}
+          {footer}
+        </div>
       </>
     )
   }
