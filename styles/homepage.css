@@ -16,7 +16,7 @@
   height: 0;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 1s linear, height 0s 1s;
+  transition: visibility 0s 2s, opacity 2s linear, height 0s 2s;
 }
 .fade-in {
   width: 100%;
