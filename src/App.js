@@ -293,11 +293,11 @@ class App extends React.Component {
     if(!this.state.hideLoadingPage) {
       setTimeout(() => {
           hideLoadingPage();
-      }, 2000);
+      }, 1000);
 
       setTimeout(() => {
           showHomepage();
-      }, 4200);
+      }, 2000);
     }
 
     if(this.state.currentPage === "homepage") {

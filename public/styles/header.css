@@ -8,6 +8,7 @@
   align-items: center;
   position: absolute;
   top: 0px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .navbar-item {
@@ -19,6 +20,6 @@
 .navbar-logo {
   width: 100px;
   margin-right: auto;
-  margin-left: 30px;
+  margin-left: 60px;
   cursor: pointer;
 }

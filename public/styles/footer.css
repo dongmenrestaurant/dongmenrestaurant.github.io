@@ -4,14 +4,12 @@
 }
 
 .footer {
-  height: 120px;
   width: 95%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 5px;
   justify-items: center;
-  align-items: center;
-  margin: 0 auto;
+  margin: 35px auto;
 }
 
 .footer-item {
