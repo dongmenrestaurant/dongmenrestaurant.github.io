@@ -17,6 +17,13 @@
   cursor: pointer;
 }
 
+.navbar-item:hover {
+  color: #F7B500;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
 .navbar-logo {
   width: 100px;
   margin-right: auto;

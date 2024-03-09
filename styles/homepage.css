@@ -16,7 +16,7 @@
   height: 0;
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s 1s, opacity 1s linear, height 0s 1s;
+  transition: visibility 0s 500ms, opacity 500ms linear, height 0s 500ms;
 }
 .fade-in {
   width: 100%;
@@ -50,6 +50,11 @@
   border: 2px solid #F7B500;
   margin-top: 50px;
   cursor: pointer;
+}
+
+.homepage-button:hover {
+  color: black;
+  border: 2px solid black;
 }
 
 .homepage-about-us {
