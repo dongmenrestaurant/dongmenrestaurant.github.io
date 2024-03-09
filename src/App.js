@@ -297,7 +297,7 @@ class App extends React.Component {
 
       setTimeout(() => {
           showHomepage();
-      }, 2000);
+      }, 1500);
     }
 
     if(this.state.currentPage === "homepage") {
