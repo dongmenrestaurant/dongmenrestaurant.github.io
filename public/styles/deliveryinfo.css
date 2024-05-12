@@ -4,7 +4,7 @@
 
 .deliveryinfo-body {
   margin-top: 140px;
-  display: grid;
+  display: block;
 }
 
 .deliveryinfo-description {
