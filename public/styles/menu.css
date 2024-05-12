@@ -4,6 +4,7 @@
 
 .menu-image-bottom-text {
   text-align: right;
+  font-size: 0.8vw;
 }
 
 .menu-body {
@@ -17,7 +18,7 @@
 
 .menu-title {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 1.6vw;
   margin-bottom: 40px;
 }
 

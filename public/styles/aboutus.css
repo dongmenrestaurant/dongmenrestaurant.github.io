@@ -9,11 +9,11 @@
 .aboutus-paragraph {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  font-size: 20px;
-  row-gap: 40px;
-  column-gap: 60px;
-  padding: 40px 150px;
-  line-height: 40px;
+  font-size: 1vw;
+  row-gap: 2em;
+  column-gap: 3em;
+  padding: 2% 8%;
+  line-height: 2.1em;
   align-items: center;
 }
 
@@ -21,7 +21,7 @@
   grid-column: 1 / -1;
   place-self: center;
   font-weight: bold;
-  font-size: 32px;
+  font-size: 1.6vw;
 }
 
 .aboutus-full-line {

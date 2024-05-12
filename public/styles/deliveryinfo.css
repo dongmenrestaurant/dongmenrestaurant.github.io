@@ -14,17 +14,17 @@
 
 .deliveryinfo-title {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 1.6vw;
   margin-bottom: 40px;
 }
 
 .deliveryinfo-text {
-  font-size: 20px;
+  font-size: 1vw;
   margin-bottom: 60px;
 }
 
 .deliveryinfo-texttwo{
-  font-size: 20px;
+  font-size: 1vw;
   margin-bottom: 100px;
 }
 
@@ -40,4 +40,5 @@
 
 .deliveryinfo-priceimage-bottom-text {
   text-align: right;
+  font-size: 0.8vw;
 }
