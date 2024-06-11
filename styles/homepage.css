@@ -43,13 +43,14 @@
 .homepage-button {
   margin-left: auto;
   text-align: center;
-  width: 180px;
+  width: 20%;
   height: 50px;
   line-height: 50px;
   color: #F7B500;
   border: 2px solid #F7B500;
   margin-top: 50px;
   cursor: pointer;
+  font-size: 0.8vw;
 }
 
 .homepage-button:hover {
@@ -59,7 +60,7 @@
 
 .homepage-about-us {
   width: 60%;
-  padding: 200px 100px;
+  padding: 10% 5%;
 }
 
 .homepage-about-us-image {
@@ -67,19 +68,19 @@
 }
 
 .homepage-section-title {
-  font-size: 52px;
+  font-size: 2.6vw;
   font-weight: bold;
   margin-bottom: 40px;
 }
 
 .homepage-section-text {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1vw;
+  line-height: 1.6em;
 }
 
 .homepage-food {
   width: 40%;
-  padding: 200px 50px;
+  padding: 10% 5%;
 }
 
 .homepage-food-image {

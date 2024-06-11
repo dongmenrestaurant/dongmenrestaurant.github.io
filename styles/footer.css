@@ -10,6 +10,7 @@
   grid-column-gap: 5px;
   justify-items: center;
   margin: 35px auto;
+  font-size: 0.8vw;
 }
 
 .footer-item {
