@@ -155,7 +155,7 @@ class App extends React.Component {
               關於東門
             </div>
             <div className="homepage-section-text">
-              民國50年的某的傍晚，在台北信義路跟金山南路街口，一對父子正緩緩推著一臺破舊的木製攤車，一路嘰嘎的車輪聲引來了路人的注意，生澀的年輕人不好意思把頭壓的更低了！今日是他們開張的第一天，也是東門餃子館的誕生日，算算看至今已有60餘個寒暑！
+              民國50年的某個傍晚，在台北信義路跟金山南路街口，一對父子正緩緩推著一臺破舊的木製攤車，一路嘰嘎的車輪聲引來了路人的注意，生澀的年輕人不好意思把頭壓的更低了！今日是他們開張的第一天，也是東門餃子館的誕生日，算算看至今已有60餘個寒暑！
             </div>
             <div className="homepage-button" onClick={navigateToAboutUsPage}>
               了解更多
@@ -183,8 +183,7 @@ class App extends React.Component {
               最新消息
             </div>
             <div className="homepage-section-text ">
-              因疫情變化來客量波動，本店五月份每週一公休，六月份將視疫情狀況調整或恢復。
-              共體時艱，請多包涵
+              新聞
             </div>
           </div>
         </div>
