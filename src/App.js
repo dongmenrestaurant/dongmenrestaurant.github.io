@@ -1,4 +1,6 @@
 /* src/App.js */
+import "./App.css";
+
 import React, { useEffect, useState } from 'react'
 
 class App extends React.Component {
@@ -74,7 +76,7 @@ class App extends React.Component {
       <div className="navbar">
         <img className="navbar-logo" src="images/dmlogo.png" onClick={navigateToHomepage}/>
         <div className="navbar-item" onClick={navigateToAboutUsPage}>
-          關於東門
+          東門歷史
         </div>
         <div className="navbar-item" onClick={navigateToMenuPage}>
           美食介紹
@@ -93,29 +95,45 @@ class App extends React.Component {
         <hr className="footer-divider"/>
         <div className="footer">
           <div className="footer-item" style={{justifySelf: "start"}}>
-            <div>
-              聯絡資訊
-            </div>
-            <div>
-              (02) 2341-1685
-            </div>
-            <div>
-              (02) 2393-9978
-            </div>
-            <div>
-              dumpling.tw@gmail.com
-            </div>
+
+            <div className="contact-info">
+  <div className="row">
+    <span className="value">聯絡資訊</span>
+  </div>
+
+  <div className="row">
+    <span className="value">(02) 2341-1685</span>
+  </div>
+
+  <div className="row">
+    <span className="value">dumpling.tw@gmail.com</span>
+  </div>
+</div>
+
           </div>
           <div className="footer-item">
-            <div>
-              營業時間
-            </div>
-            <div>
-              一 - 五：11:00--14:00 17:00--20:40
-            </div>
-            <div>
-              六 - 日：11:00--14:30 17:00--21:00
-            </div>
+
+            <div className="business-hours">
+    <div className="row">
+    <span className="hours">營業時間</span>
+  </div>
+
+  <div className="row">
+    <span className="day">一 - 四</span>
+    <span className="time">：11:00--14:00 17:00--20:40</span>
+  </div>
+
+  <div className="row">
+    <span className="day">五</span>
+    <span className="time">：11:00--14:00 17:00--21:00</span>
+  </div>
+
+  <div className="row">
+    <span className="day">六 - 日</span>
+    <span className="time">：11:00--14:30 17:00--21:00</span>
+  </div>
+</div>
+
           </div>
           <div className="footer-item" style={{justifySelf: "end", textAlign: "right"}}>
             <span>
@@ -154,8 +172,8 @@ class App extends React.Component {
             <div className="homepage-section-title">
               關於東門
             </div>
-            <div className="homepage-section-text">
-              民國50年的某個傍晚，在台北信義路跟金山南路街口，一對父子正緩緩推著一臺破舊的木製攤車，一路嘰嘎的車輪聲引來了路人的注意，生澀的年輕人不好意思把頭壓的更低了！今日是他們開張的第一天，也是東門餃子館的誕生日，算算看至今已有60餘個寒暑！
+            <div className="homepage-section-text"style={{fontSize: "20px",textIndent: "2em"}}>
+              民國50年的某個傍晚，在台北信義路跟金山南路街口，一對父子正緩緩推著一臺破舊的木製攤車，一路嘰嘎的車輪聲引來了路人的注意，生澀的年輕人不好意思把頭壓得更低了！今日是他們開張的第一天，也是東門餃子館的誕生日，算算看至今已有60餘個寒暑，這份從街頭開始累積的滋味，也在時光流轉中，悄悄成為許多人心中難以忘懷的回憶。
             </div>
             <div className="homepage-button" onClick={navigateToAboutUsPage}>
               了解更多
@@ -169,8 +187,12 @@ class App extends React.Component {
             <div className="homepage-section-title">
               美食介紹
             </div>
-            <div className="homepage-section-text">
-              東門餃子館經歷了長久的經營，秉持著專心的追求最美味道地菜色的信念，讓每一道菜都讓消費者感到一種用心的感受，歡迎您，挑選我們為您準備的精緻菜單。
+            <div className="homepage-section-text"
+            style={{fontSize: "20px",textIndent: "2em"}}
+            >
+              東門餃子館經歷了長久的經營，秉持著專心追求最美味、最道地菜色的信念，始終堅持以最單純的做法，呈現最真實的滋味。從選材、製作到上桌，每一道料理都投注了我們對品質的重視與對顧客的用心，希望讓每一位來到店裡的朋友，都能在熟悉的味道中感受到安心與滿足。
+              <br/><br/>
+              我們不斷累積經驗、調整細節，只為讓傳承下來的經典風味能夠穩定呈現。無論是水餃、鍋貼，或是各式家常菜色，皆以新鮮食材與扎實工序製作。誠摯歡迎您走進東門餃子館，細細品嚐我們為您準備的精緻菜單，與我們一同分享這份歷久彌新的好味道。
             </div>
             <div className="homepage-button" onClick={navigateToMenuPage}>
               了解更多
@@ -182,9 +204,16 @@ class App extends React.Component {
             <div className="homepage-section-title">
               最新消息
             </div>
-            <div className="homepage-section-text ">
-              新聞
-            </div>
+            <div
+  className="homepage-section-text"
+  style={{ textAlign: "center" ,fontSize: "20px"}}
+>
+  外帶自取 QR Code 訂餐服務正式上線
+  <br/>
+  即日起可透過外帶自取頁面內 QR Code 連結點餐自取
+  <br/>
+  如希望較快取餐，仍可於營業時間來電訂餐，我們很樂意為您協助安排
+</div>
           </div>
         </div>
       </div>
@@ -195,9 +224,9 @@ class App extends React.Component {
         <img className="aboutus-banner-image" src="images/aboutusbanner.jpg"/>
         <div className="aboutus-paragraph">
           <div className="aboutus-title">
-            關於東門
+            東門歷史
           </div>
-          <div className="aboutus-full-line">
+          <div className="aboutus-full-line" style={{textIndent: "2em"}}>
             民國50年的某的傍晚，在台北信義路跟金山南路街口，一對父子正緩緩推著一臺破舊的木製攤車，一路嘰嘎的車輪聲引來了路人的注意，生澀的年輕人不好意思把頭壓的更低了！今日是他們開張的第一天，也是東門餃子館的誕生日，算算看至今已有50餘個寒暑！
           </div>
           <div>
@@ -227,12 +256,12 @@ class App extends React.Component {
           <div className="menu-container">
             <img className="menu-image" src="images/menu-first-page.jpg"/>
             <div className="menu-image-bottom-text">
-              * 更多品項及季節限定菜色請至外帶自取頁面查看 *
+              * 更多品項及季節限定菜色請至外帶自取網頁查看 *
             </div>
             <br/><br/><br/><br/>
             <img className="menu-image" src="images/menu-second-page.jpg"/>
             <div className="menu-image-bottom-text">
-              * 更多品項及季節限定菜色請至外帶自取頁面查看 *
+              * 更多品項及季節限定菜色請至外帶自取網頁查看 *
             </div>
           </div>
         </div>
@@ -247,11 +276,10 @@ class App extends React.Component {
             外送資訊
           </div>
           <div className="deliveryinfo-text">
-            東門餃子館與 Food Panda 富胖達外送服務合作，請由下方連結訂購
-            <br/><br/>
-            <a href="https://www.foodpanda.com.tw/en/restaurant/w0ll/dong-men-jiao-zi-guan">
-              https://www.foodpanda.com.tw/en/restaurant/w0ll/dong-men-jiao-zi-guan
-            </a>
+            東門餃子館目前與 <a href="https://www.foodpanda.com.tw/en/restaurant/w0ll/dong-men-jiao-zi-guan">
+               Food Panda 
+            </a> 外送服務合作
+
           </div>
           <div className="deliveryinfo-title">
             宅配資訊
@@ -281,10 +309,33 @@ class App extends React.Component {
             外帶自取
           </div>
           <div className="contactus-text">
-            網路點餐外帶自取功能即將上線
-            <br/><br/>
-            如有外帶需求可來電訂餐
+            <br/>
+            <span  style={{
+    textDecoration: "underline",
+    textUnderlineOffset: "4px"
+  }}>
+  若訂單時間較為緊迫，歡迎來電訂餐
+</span>
+            <br/>
+            <br/>
+            <br/>
           </div>
+          <div className="contactus-text">
+<a
+  href="https://qrorder.lcc.com.tw:8083/index.aspx?StoreNumber=289&Mode=line"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+   <img
+    src="images/takeout-qrcode.png"
+    alt="外帶自取QRcode"
+    style={{
+      maxWidth: "400px",
+      height: "auto"
+    }}
+  />
+  </a>
+</div>
         </div>
       </div>
     );

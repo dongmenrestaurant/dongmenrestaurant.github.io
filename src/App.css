@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.business-hours .row {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-bottom: 0px;
+  align-items: center;
+}
+
+.business-hours .day {
+  text-align: center;
+}
+
+.contact-info .row {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  margin-bottom: 0px;
+}
+
+.contact-info .value {
+  grid-column: 2;
+  white-space: nowrap;
+}

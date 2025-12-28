@@ -42,16 +42,24 @@
 
 .homepage-button {
   margin-left: auto;
-  text-align: center;
   width: 20%;
+  min-width: 120px;
   height: 50px;
-  line-height: 50px;
+
+  display: flex;                 /* ✅ 關鍵 */
+  align-items: center;           /* ✅ 垂直置中 */
+  justify-content: center;       /* ✅ 水平置中 */
+
   color: #F7B500;
   border: 2px solid #F7B500;
   margin-top: 50px;
   cursor: pointer;
-  font-size: 0.8vw;
+
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
+
 
 .homepage-button:hover {
   color: black;
