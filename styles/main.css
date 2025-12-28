@@ -1,0 +1,11 @@
+@import url("header.css");
+@import url("footer.css");
+@import url("homepage.css");
+@import url("aboutus.css");
+@import url("menu.css");
+@import url("deliveryinfo.css");
+@import url("contactus.css");
+
+* {
+  box-sizing: border-box;
+}

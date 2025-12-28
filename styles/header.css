@@ -1,0 +1,32 @@
+.navbar {
+  height: 140px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr repeat(4, auto) 1fr;
+  grid-column-gap: 50px;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.navbar-item {
+  font-size: 1.4vw;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+.navbar-item:hover {
+  color: #F7B500;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 6px;
+}
+
+.navbar-logo {
+  width: 130px;
+  margin-right: auto;
+  margin-left: 60px;
+  cursor: pointer;
+}

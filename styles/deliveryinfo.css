@@ -1,0 +1,44 @@
+.deliveryinfo-image {
+  width: 100%;
+}
+
+.deliveryinfo-body {
+  margin-top: 140px;
+  display: block;
+}
+
+.deliveryinfo-description {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.deliveryinfo-title {
+  font-weight: bold;
+  font-size: 1.6vw;
+  margin-bottom: 40px;
+}
+
+.deliveryinfo-text {
+  font-size: 1vw;
+  margin-bottom: 60px;
+}
+
+.deliveryinfo-texttwo{
+  font-size: 1vw;
+  margin-bottom: 10px;
+}
+
+.deliveryinfo-price {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.deliveryinfo-priceimage {
+  display: block;
+  width: 100%;
+}
+
+.deliveryinfo-priceimage-bottom-text {
+  text-align: right;
+  font-size: 0.8vw;
+}

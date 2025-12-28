@@ -1,0 +1,34 @@
+.aboutus-body {
+  margin-top: 140px;
+}
+
+.aboutus-banner-image {
+  width: 100%;
+}
+
+.aboutus-paragraph {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 1vw;
+  row-gap: 2em;
+  column-gap: 3em;
+  padding: 2% 8%;
+  line-height: 2.1em;
+  align-items: center;
+}
+
+.aboutus-title {
+  grid-column: 1 / -1;
+  place-self: center;
+  font-weight: bold;
+  font-size: 1.6vw;
+}
+
+.aboutus-full-line {
+  grid-column: 1 / -1;
+  place-self: center;
+}
+
+.aboutus-paragraph-image {
+  width: 100%;
+}
